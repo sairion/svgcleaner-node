@@ -10,10 +10,11 @@ var svgCleanerPath =
   process.platform === 'darwin'
     ? path.join(__dirname, 'vendor', `svgcleaner-osx-v${Version}`) :
   process.platform === 'linux' && process.arch === 'x64'
-    ? path.join(__dirname, 'vendor', `svgcleaner-linux64-v${Version}`) :
+    ? path.join(__dirname, 'node_modules', 'svgcleaner', 'svgcleaner') :
   process.platform === 'win32' && process.arch === 'x64'
     ? path.join(__dirname, 'vendor', `svgcleaner-win64-v${Version}`) :
   null
+
 
 function svgCleaner(cliArgs, wrapperArgs = {}) {
     if (wrapperArgs.dev || wrapperArgs.showCliArgs) {
@@ -64,4 +65,4 @@ function convertArgs(argObject) {
     return ret
 }
 
-exports.svgCleaner = svgCleaner
+module.exports = svgCleaner
