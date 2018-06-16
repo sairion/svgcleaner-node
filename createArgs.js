@@ -1,5 +1,5 @@
-//  https://github.com/RazrFalcon/svgcleaner/blob/1f579e84a5e8c47b36be195bf9c8decc10d1fca8/src/cli.rs
-//  svgcleaner cli v0.8.1
+//  https://github.com/RazrFalcon/svgcleaner/blob/2cf52ab2ce2b005529f8470110e3f9c6bbd3c9cc/src/cli.rs
+//  svgcleaner cli v0.9.5
 
 var argKeys = [
     "remove-comments",

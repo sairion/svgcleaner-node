@@ -21,9 +21,8 @@
     "url": "https://github.com/sairion/svgcleaner-node/issues"
   },
   "homepage": "https://github.com/sairion/svgcleaner-node#readme",
-  "vendorVersion": "0.8.1",
+  "vendorVersion": "0.9.5",
   "dependencies": {
-    "mkdirp": "^0.5.1",
-    "svgcleaner": "0.8.1-1"
+    "mkdirp": "^0.5.1"
   }
 }
