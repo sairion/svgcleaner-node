@@ -65,4 +65,10 @@ module.exports = function svgCleaner(cliArgs, wrapperArgs = {}) {
             console.warn(`ERR: ${data}`)
         })
     }
+  
+    if (wrapperArgs.callback) {
+        svgcleanerProc.stderr.on('close', (code) => {
+            wrapperArgs.callback(code)
+        })
+    }
 }
